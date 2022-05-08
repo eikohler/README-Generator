@@ -1,10 +1,10 @@
-# Dummy
+# README Generator
 
-  [![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
+  [![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
 
   ## Description
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan sodales lacus, sed molestie augue vehicula et. Pellentesque in nunc nec quam vestibulum pulvinar.
+  Creates a dynamic readme markdown file using user input
   
   ## Table of Contents
     
@@ -17,23 +17,23 @@
   
   ## Installation
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan sodales lacus, sed molestie augue vehicula et. Pellentesque in nunc nec quam vestibulum pulvinar.
+  Install the project folder from github
   
   ## Usage
   
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan sodales lacus, sed molestie augue vehicula et. Pellentesque in nunc nec quam vestibulum pulvinar.
+  Run node index at the command line from the projects root directory
   
   ## License
   
-  This application is covered under the BSD 2-Clause License.
+  This application is covered under the Boost Software License 1.0.
   
   ## Contributing
   
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan sodales lacus, sed molestie augue vehicula et. Pellentesque in nunc nec quam vestibulum pulvinar.
+  N/a
   
   ## Tests
   
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan sodales lacus, sed molestie augue vehicula et. Pellentesque in nunc nec quam vestibulum pulvinar.
+  N/a
   
   ## Questions
   
