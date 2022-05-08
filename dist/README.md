@@ -1,10 +1,10 @@
-# README Generator
+# Test project title
 
-  [![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
+  [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
   ## Description
 
-  Creates a dynamic readme markdown file using user input
+  Test project description
   
   ## Table of Contents
     
@@ -17,23 +17,23 @@
   
   ## Installation
 
-  Install the project folder from github
+  Install the project folder
   
   ## Usage
   
-  Run node index at the command line from the projects root directory
+  run node index
   
   ## License
   
-  This application is covered under the Boost Software License 1.0.
+  This application is covered under the GNU GPL v3.
   
   ## Contributing
   
-  N/a
+  guidelines n/a
   
   ## Tests
   
-  N/a
+  Test #1: run mockup test
   
   ## Questions
   
