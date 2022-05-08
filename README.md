@@ -1,42 +1,6 @@
-# Dummy
+## README Generator
 
-  [![License](https://img.shields.io/badge/License-BSD_2--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
-
-  ## Description
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan sodales lacus, sed molestie augue vehicula et. Pellentesque in nunc nec quam vestibulum pulvinar.
-  
-  ## Table of Contents
-    
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [License](#license)
-  - [Contributing](#contributing)
-  - [Tests](#tests)
-  - [Questions](#questions)
-  
-  ## Installation
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan sodales lacus, sed molestie augue vehicula et. Pellentesque in nunc nec quam vestibulum pulvinar.
-  
-  ## Usage
-  
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan sodales lacus, sed molestie augue vehicula et. Pellentesque in nunc nec quam vestibulum pulvinar.
-  
-  ## License
-  
-  This application is covered under the BSD 2-Clause License.
-  
-  ## Contributing
-  
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan sodales lacus, sed molestie augue vehicula et. Pellentesque in nunc nec quam vestibulum pulvinar.
-  
-  ## Tests
-  
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan sodales lacus, sed molestie augue vehicula et. Pellentesque in nunc nec quam vestibulum pulvinar.
-  
-  ## Questions
-  
-  - Github Username: eikohler
-  - Link to Github: https://github.com/eikohler
-  - If you have any questions, please send me an email at erickohler1600@gmail.com
+In this assignment we were tasked with creating a professional README generator that a developer could
+use for example to quickly create a README file for their repository. The user is presented with a series
+of prompts that they fill in respectfully with information regarding their project. To prompt the user,
+I am using the npm inquirer module which asks the user their project title, description, license, installation steps, etc. This data is then fed into a custom made module called generateMarkdown, which returns a string with the README outline that includes the user's data. Using the file system module's writeFile function, a README file is then created in the dist folder using the string from generateMarkdown.
