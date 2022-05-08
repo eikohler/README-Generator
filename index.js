@@ -1,18 +1,18 @@
 const inquirer = require('inquirer');
-
-const generateMarkdown = require('./src/generateMarkdown.js');
-
+const generateMarkdown = require('./utils/generateMarkdown.js');
 const fs = require('fs');
 
 const mockData = {
-    title: 'README Generator',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan sodales lacus, sed molestie augue vehicula et. Pellentesque in nunc nec quam vestibulum pulvinar.',
-    installation: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan sodales lacus, sed molestie augue vehicula et. Pellentesque in nunc nec quam vestibulum pulvinar.',
-    usage: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan sodales lacus, sed molestie augue vehicula et. Pellentesque in nunc nec quam vestibulum pulvinar.',
-    contributing: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan sodales lacus, sed molestie augue vehicula et. Pellentesque in nunc nec quam vestibulum pulvinar.',
-    tests: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan sodales lacus, sed molestie augue vehicula et. Pellentesque in nunc nec quam vestibulum pulvinar.',
-    github: 'eikohler',
-    email: 'erickohler1600@gmail.com',
+  title: 'README Generator',
+  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan sodales lacus, sed molestie augue vehicula et. Pellentesque in nunc nec quam vestibulum pulvinar.',
+  installation: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan sodales lacus, sed molestie augue vehicula et. Pellentesque in nunc nec quam vestibulum pulvinar.',
+  usage: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan sodales lacus, sed molestie augue vehicula et. Pellentesque in nunc nec quam vestibulum pulvinar.',
+  license: 'Apache 2.0 License',
+  contributing: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan sodales lacus, sed molestie augue vehicula et. Pellentesque in nunc nec quam vestibulum pulvinar.',
+  tests: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque accumsan sodales lacus, sed molestie augue vehicula et. Pellentesque in nunc nec quam vestibulum pulvinar.',
+  github: 'eikohler',
+  email: 'erickohler1600@gmail.com',
+  licenseBadge: '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
 };
 
 const licenses = [
@@ -158,13 +158,13 @@ const promptUser = () => {
 promptUser()
 .then(getLicenseIndex)
 .then(data => {
-    console.log(data);
     fs.writeFile('./dist/README.md', generateMarkdown(data), err => {
         if (err) throw new Error(err);
         console.log('Readme created! Check in dist folder.');
     });
 });
 
+//--For Testing README generator--
 // fs.writeFile('./dist/README.md', generateMarkdown(mockData), err => {
 //     if (err) throw new Error(err);
 //     console.log('Readme created! Check in dist folder.');
