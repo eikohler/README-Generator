@@ -124,18 +124,18 @@ const promptUser = () => {
     ]);
   };
 
-promptUser().then(data => {
-    console.log(data);
-    fs.writeFile('./dist/README.md', generateMarkdown(data), err => {
-        if (err) throw new Error(err);
-        console.log('Readme created! Check in dist folder.');
-    });
-});
-
-// fs.writeFile('./dist/README.md', generateMarkdown(mockData), err => {
-//     if (err) throw new Error(err);
-//     console.log('Readme created! Check in dist folder.');
+// promptUser().then(data => {
+//     console.log(data);
+//     fs.writeFile('./dist/README.md', generateMarkdown(data), err => {
+//         if (err) throw new Error(err);
+//         console.log('Readme created! Check in dist folder.');
+//     });
 // });
+
+fs.writeFile('./dist/README.md', generateMarkdown(mockData), err => {
+    if (err) throw new Error(err);
+    console.log('Readme created! Check in dist folder.');
+});
   
 
 
